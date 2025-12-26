@@ -16,7 +16,7 @@ I'm JustAnotherDevGuy — a backend-leaning full-stack developer and Linux sysad
 
 ## Toolbox & Workflow
 
-- Backend: Node.js, TypeScript, Prisma, PostgreSQL, Redis
+- Backend: Go, Node.js, TypeScript, Prisma, PostgreSQL, Redis
 - Messaging & automation: Flux, GitHub Actions
 - Observability: Prometheus, Grafana
 - IaC & ops: Flux, Terraform, Ansible, Helm
