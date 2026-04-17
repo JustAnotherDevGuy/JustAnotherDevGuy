@@ -8,6 +8,8 @@ Building resilient systems, automating everything, and running Kubernetes across
 
 ---
 
+### Languages & Frameworks
+
 ![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
 ![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -15,7 +17,11 @@ Building resilient systems, automating everything, and running Kubernetes across
 ![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+
+### Data & Messaging
+
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-2D3748?style=for-the-badge&logo=prisma&logoColor=white)
 
 </div>
@@ -24,10 +30,11 @@ Building resilient systems, automating everything, and running Kubernetes across
 
 ## About Me
 
-I design and ship backend services, build clean APIs, and architect infrastructure that stays up. When I'm not writing code, I'm probably tinkering with my Kubernetes cluster or automating something that should have been automated a long time ago.
+I design and ship backend services, build clean APIs, and architect infrastructure that stays up. When I'm not writing code, I'm probably tinkering with my cluster or automating something that should have been automated a long time ago.
 
 - Currently learning **Rust** and **Vim** (but Nano still has a place in my heart)
 - Daily driver: **ThinkPad running CachyOS (Arch Linux)**
+- Strong believer in owning your own infrastructure
 
 ---
 
@@ -40,11 +47,14 @@ I run a **multi-region Talos Linux Kubernetes cluster** for high availability, s
 | Germany | Dedicated server | VM on Proxmox VE |
 | Netherlands | VPS | Talos Linux |
 
-Everything is managed through **GitOps with FluxCD** — infrastructure as code, declarative, and version-controlled.
+Everything is managed through **GitOps with FluxCD** — infrastructure as code, declarative, and version-controlled. All workloads run with HA where possible.
+
+If it can be self-hosted, it's probably already running on my cluster.
 
 ### Infra & DevOps Stack
 
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Talos Linux](https://img.shields.io/badge/Talos_Linux-FF7300?style=for-the-badge&logo=linux&logoColor=white)
 ![Proxmox](https://img.shields.io/badge/Proxmox-E57000?style=for-the-badge&logo=proxmox&logoColor=white)
 ![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
@@ -67,9 +77,16 @@ Everything is managed through **GitOps with FluxCD** — infrastructure as code,
 
 ---
 
-<div align="center">
+## Workspace
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=JustAnotherDevGuy&show_icons=true&theme=github_dark&hide_border=true&bg_color=0d1117)
+![Arch Linux](https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=archlinux&logoColor=white)
+![ThinkPad](https://img.shields.io/badge/ThinkPad-EE2624?style=for-the-badge&logo=lenovo&logoColor=white)
+![Vim](https://img.shields.io/badge/Vim-019733?style=for-the-badge&logo=vim&logoColor=white)
+![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
+
+---
+
+<div align="center">
 
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=JustAnotherDevGuy&theme=github-dark-blue&hide_border=true&background=0d1117)
 
