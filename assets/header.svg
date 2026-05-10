@@ -1,80 +1,101 @@
-<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+<svg width="1600" height="520" viewBox="0 0 1600 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
   <title id="title">JustAnotherDevGuy profile header</title>
-  <desc id="desc">Animated backend and infrastructure themed header with grid, terminal panel, and operator metrics.</desc>
+  <desc id="desc">Minimal backend and infrastructure themed header with safe spacing and subtle motion.</desc>
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="420" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#09111D"/>
-      <stop offset="0.55" stop-color="#0C1726"/>
-      <stop offset="1" stop-color="#0A0F18"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="520" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#09111A"/>
+      <stop offset="0.52" stop-color="#0C1623"/>
+      <stop offset="1" stop-color="#0A0F17"/>
     </linearGradient>
-    <linearGradient id="line" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#3B82F6" stop-opacity="0.9"/>
-      <stop offset="1" stop-color="#22C55E" stop-opacity="0.9"/>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111C2C"/>
+      <stop offset="1" stop-color="#0E1724"/>
     </linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#38BDF8"/>
-      <stop offset="1" stop-color="#22C55E"/>
+      <stop stop-color="#4CC9FF"/>
+      <stop offset="1" stop-color="#57F2A3"/>
     </linearGradient>
-    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+    <pattern id="grid" width="36" height="36" patternUnits="userSpaceOnUse">
+      <path d="M36 0H0V36" stroke="#16304A" stroke-width="1"/>
+    </pattern>
+    <filter id="glow" x="-25%" y="-25%" width="150%" height="150%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M32 0H0V32" stroke="#17304C" stroke-width="1"/>
-    </pattern>
   </defs>
 
-  <rect width="1600" height="420" rx="24" fill="url(#bg)"/>
-  <rect width="1600" height="420" rx="24" fill="url(#grid)" opacity="0.55"/>
+  <rect width="1600" height="520" rx="28" fill="url(#bg)"/>
+  <rect width="1600" height="520" rx="28" fill="url(#grid)" opacity="0.33"/>
 
-  <g opacity="0.12">
-    <path d="M0 120H1600" stroke="#4F86C6"/>
-    <path d="M0 260H1600" stroke="#4F86C6"/>
-    <path d="M240 0V420" stroke="#4F86C6"/>
-    <path d="M1120 0V420" stroke="#4F86C6"/>
+  <g opacity="0.22">
+    <path d="M0 130H1600" stroke="#16304A"/>
+    <path d="M0 292H1600" stroke="#16304A"/>
+    <path d="M892 0V520" stroke="#16304A"/>
   </g>
 
-  <rect x="56" y="54" width="760" height="312" rx="18" fill="#0B1220" stroke="#22364F"/>
-  <rect x="56" y="54" width="760" height="42" rx="18" fill="#0F1A2C"/>
-  <circle cx="90" cy="75" r="6" fill="#EF4444"/>
-  <circle cx="112" cy="75" r="6" fill="#F59E0B"/>
-  <circle cx="134" cy="75" r="6" fill="#22C55E"/>
-  <text x="160" y="80" fill="#8AA4C7" font-family="monospace" font-size="16">operator@justanotherdevguy: ~/cluster</text>
+  <g>
+    <rect x="56" y="56" width="836" height="406" rx="24" fill="url(#panel)" stroke="#254262"/>
+    <rect x="56" y="56" width="836" height="48" rx="24" fill="#162235"/>
+    <circle cx="90" cy="80" r="6" fill="#FF5F57"/>
+    <circle cx="118" cy="80" r="6" fill="#FEBC2E"/>
+    <circle cx="146" cy="80" r="6" fill="#28C840"/>
+    <text x="180" y="86" fill="#90A9CC" font-family="monospace" font-size="16">operator@justanotherdevguy</text>
 
-  <text x="88" y="148" fill="#E6F1FF" font-family="monospace" font-size="40" font-weight="700">$ whoami</text>
-  <text x="88" y="194" fill="#73FCB3" font-family="monospace" font-size="26">backend-focused full-stack developer</text>
-  <text x="88" y="228" fill="#73FCB3" font-family="monospace" font-size="26">&amp;&amp; linux infrastructure engineer</text>
-  <text x="88" y="280" fill="#8AA4C7" font-family="monospace" font-size="22">go  typescript  kubernetes  gitops  observability</text>
+    <text x="92" y="164" fill="#E8F1FC" font-family="monospace" font-size="30">backend systems engineer</text>
+    <text x="92" y="220" fill="#69F0AE" font-family="monospace" font-size="64" font-weight="700">ship code</text>
+    <text x="92" y="286" fill="#69F0AE" font-family="monospace" font-size="64" font-weight="700">keep it up</text>
+    <text x="92" y="344" fill="#9CB7DA" font-family="monospace" font-size="22">go  •  typescript  •  kubernetes</text>
+    <text x="92" y="382" fill="#9CB7DA" font-family="monospace" font-size="22">gitops  •  observability</text>
 
-  <g filter="url(#glow)">
-    <path d="M88 312H358" stroke="url(#accent)" stroke-width="4" stroke-linecap="round">
-      <animate attributeName="stroke-dasharray" values="0 270;135 135;270 0" dur="7s" repeatCount="indefinite"/>
+    <g transform="translate(92 438)">
+      <rect width="264" height="18" rx="9" fill="#122033" stroke="#22415F"/>
+      <path d="M12 9H252" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" filter="url(#glow)">
+        <animate attributeName="stroke-dasharray" values="0 240;120 120;240 0" dur="7s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(956 70)">
+    <rect width="586" height="184" rx="22" fill="url(#panel)" stroke="#254262"/>
+    <text x="32" y="46" fill="#E8F1FC" font-family="monospace" font-size="21">footprint</text>
+
+    <rect x="32" y="72" width="230" height="84" rx="16" fill="#132033" stroke="#2A4768"/>
+    <text x="54" y="103" fill="#69F0AE" font-family="monospace" font-size="20">de-fsn</text>
+    <text x="54" y="126" fill="#9CB7DA" font-family="monospace" font-size="14">
+      <tspan x="54" dy="0">core region</tspan>
+      <tspan x="54" dy="18">proxmox</tspan>
+    </text>
+
+    <rect x="324" y="72" width="230" height="84" rx="16" fill="#132033" stroke="#2A4768"/>
+    <text x="346" y="103" fill="#69F0AE" font-family="monospace" font-size="20">nl-edge</text>
+    <text x="346" y="126" fill="#9CB7DA" font-family="monospace" font-size="14">
+      <tspan x="346" dy="0">edge region</tspan>
+      <tspan x="346" dy="18">ingress</tspan>
+    </text>
+
+    <path d="M262 104H324" stroke="url(#accent)" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10" filter="url(#glow)">
+      <animate attributeName="stroke-dashoffset" values="0;-40" dur="2.2s" repeatCount="indefinite"/>
     </path>
   </g>
 
-  <g transform="translate(930 64)">
-    <rect width="604" height="292" rx="20" fill="#0B1220" stroke="#22364F"/>
-    <text x="28" y="42" fill="#D8E7FA" font-family="monospace" font-size="20">cluster overview</text>
+  <g transform="translate(956 274)">
+    <rect width="586" height="112" rx="22" fill="url(#panel)" stroke="#254262"/>
+    <text x="32" y="44" fill="#E8F1FC" font-family="monospace" font-size="21">delivery</text>
+    <text x="32" y="73" fill="#BFD0E6" font-family="monospace" font-size="16">
+      <tspan x="32" dy="0">push  →  reconcile</tspan>
+      <tspan x="32" dy="24">release  →  rollout</tspan>
+    </text>
+  </g>
 
-    <rect x="28" y="68" width="250" height="88" rx="14" fill="#0F1B2D" stroke="#23415F"/>
-    <text x="48" y="102" fill="#72F0B2" font-family="monospace" font-size="20">de-fsn</text>
-    <text x="48" y="130" fill="#8AA4C7" font-family="monospace" font-size="16">proxmox vm / control-heavy</text>
-
-    <rect x="326" y="68" width="250" height="88" rx="14" fill="#0F1B2D" stroke="#23415F"/>
-    <text x="346" y="102" fill="#72F0B2" font-family="monospace" font-size="20">nl-edge</text>
-    <text x="346" y="130" fill="#8AA4C7" font-family="monospace" font-size="16">talos node / public ingress</text>
-
-    <rect x="28" y="190" width="548" height="68" rx="14" fill="#0F1B2D" stroke="#23415F"/>
-    <text x="48" y="229" fill="#D8E7FA" font-family="monospace" font-size="18">flux reconcile  ->  helm release  ->  rolling deploy</text>
-
-    <path d="M278 112H326" stroke="url(#line)" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 10">
-      <animate attributeName="stroke-dashoffset" values="0;-40" dur="2s" repeatCount="indefinite"/>
-    </path>
-    <circle cx="302" cy="112" r="6" fill="#38BDF8">
-      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
-    </circle>
+  <g transform="translate(956 404)">
+    <rect width="586" height="116" rx="22" fill="url(#panel)" stroke="#254262"/>
+    <text x="32" y="40" fill="#E8F1FC" font-family="monospace" font-size="21">focus</text>
+    <text x="32" y="67" fill="#9CB7DA" font-family="monospace" font-size="15">
+      <tspan x="32" dy="0">typed services</tspan>
+      <tspan x="32" dy="22">recoverable infra</tspan>
+    </text>
   </g>
 </svg>

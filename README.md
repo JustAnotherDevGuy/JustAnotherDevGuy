@@ -23,6 +23,8 @@ My main lab is a multi-location Talos Linux Kubernetes setup spread across Germa
   <img src="./assets/architecture.svg" alt="Cluster architecture diagram spanning Germany and the Netherlands" width="100%" />
 </div>
 
+`GitHub -> FluxCD -> Germany / Netherlands -> Observability`
+
 ### Operating Principles
 
 - Everything important should be declarative, versioned, and recoverable
@@ -45,14 +47,11 @@ My main lab is a multi-location Talos Linux Kubernetes setup spread across Germa
 
 ## Deployment Flow
 
-```text
-git push
-  -> GitHub
-  -> FluxCD detects drift
-  -> HelmRelease / Kustomization reconciles
-  -> Talos Kubernetes rolls workload
-  -> Prometheus + Grafana confirm the change did not hurt anything
-```
+<div align="center">
+  <img src="./assets/deploy-flow.svg" alt="GitOps deployment flow from Git push to observed rollout" width="100%" />
+</div>
+
+`push -> reconcile -> release -> observe`
 
 ```yaml
 apiVersion: helm.toolkit.fluxcd.io/v2
